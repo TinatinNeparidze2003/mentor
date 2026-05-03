@@ -3,11 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Codementor</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon" type="image/x-icon">
 </head>
 <body>
-  
+<header class="d-header">
+    <!-- ჰამბურგერი მობილურისთვის -->
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <!-- ლოგო -->
+    <div class="logo">
+        <a href="#"><strong>codementor</strong></a>
+    </div>
+
+    <!-- Sign up ღილაკი მობილურისთვის -->
+    <div class="mobile-auth">
+        <button class="signup-btn">Sign up</button>
+    </div>
+
+    <nav class="main-nav">
+        <ul class="menu-links">
+            <li class="has-dropdown">
+                <div class="dropdown-header">
+                    <a href="#">Mentorship</a>
+                    <span class="arrow">▾</span>
+                </div>
+                <ul class="submenu">
+                    <li><a href="#">Find a Mentor</a></li>
+                    <li><a href="#">Become a Mentor</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <div class="dropdown-header">
+                    <a href="#">Expert help</a>
+                    <span class="arrow">▾</span>
+                </div>
+                <ul class="submenu">
+                    <li><a href="#">Live Help</a></li>
+                    <li><a href="#">Code Review</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <div class="dropdown-header">
+                    <a href="#">Freelancing</a>
+                    <span class="arrow">▾</span>
+                </div>
+                <ul class="submenu">
+                    <li><a href="#">Hire a Freelancer</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <div class="dropdown-header">
+                    <a href="#">More</a>
+                    <span class="arrow">▾</span>
+                </div>
+                <ul class="submenu">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- დესკტოპ მენიუ (Become a Mentor / Log in) -->
+        <ul class="auth-links desktop-only">
+            <li><a href="#">Become a mentor</a></li>
+            <li><a href="#">Log in</a></li>
+            <li><button class="signup-btn">Sign up</button></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero-section">
+        <h2>Connect with 12000+ top developers anytime</h2>
+        
+        <div class="wrapper">
+            <!-- ბარათი 1 -->
+            <div class="card-section">
+                <img src="images/jessamyn-smith.png" alt="Jessamyn Smith">
+                <div class="text-content">
+                    <h3>Jessamyn Smith</h3>
+                    <p>Experienced Full-Stack Web Developer</p>
+                </div>
+            </div>
+
+            <!-- ბარათი 2 -->
+            <div class="card-section">
+                <img src="images/dan-hamilton.png" alt="Daniel Hamilton">
+                <div class="text-content">
+                    <h3>Daniel Hamilton</h3>
+                    <p>Senior Software Engineer @ Indeed</p>
+                </div>
+            </div>
+
+            <!-- ბარათი 3 -->
+            <div class="card-section">
+                <img src="images/martijn-pieters.png" alt="Martijn Pieters">
+                <div class="text-content">
+                    <h3>Martijn Pieters</h3>
+                    <p>#1 Stack Overflow Python Answerer</p>
+                </div>
+            </div>
+            
+           <div class="card-section">
+            <img src="images/ionica-bizau.png" alt="ionica-bizau">
+            <div class="text-content">
+            <h3>Ionică Bizău</h3>
+            <p>Full-Stack Developer</p>
+           </div>
+        </div>
+        
+           <div class="card-section">
+            <img src="images/miroslav-kutak.png" alt="miroslav">
+            <div class="text-content">
+            <h3>Miroslav Kuťák</h3>
+            <p>Senior iOS Developer</p>
+           </div>
+        </div>
+        
+           <div class="card-section">
+            <img src="images/ben-gottlieb.png" alt="ben-gottlieb">
+            <div class="text-content">
+            <h3>Ben Gottlieb</h3>
+            <p>Senior iOS Developer and Consultant</p>
+           </div>
+        </div>
+        </div>
+        
+        <h4 class="footer-link">Start working with our developers</h4>
+    </section>
+</main>
+<script src="script/javascript.js"></script>
+</body>
+</html>
 </body>
 </html>

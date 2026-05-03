@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f7f5;
+}
+a{
+  text-decoration: none;
+}
+
+/* --- HEADER --- */
+.d-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: 4px 0;
+    background-color: #333;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.signup-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- NAVIGATION --- */
+.main-nav {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.main-nav.active {
+    display: flex;
+}
+
+.menu-links, .auth-links {
+    list-style: none;
+}
+
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f5f5f5;
+    cursor: pointer;
+}
+
+.dropdown-header a {
+    text-decoration: none;
+    color: #333;
+}
+
+.submenu {
+    display: none;
+    background-color: #fafafa;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.has-dropdown.open .submenu {
+    display: block;
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.has-dropdown.open .arrow {
+    transform: rotate(180deg);
+}
+
+/* --- HERO & CARDS --- */
+.hero-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-section h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.card-section {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card-section img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.text-content {
+    text-align: left;
+}
+
+.text-content h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.text-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-link {
+    margin-top: 30px;
+    color: black;
+   
+}
+
+/* --- DESKTOP ADAPTATION --- */
+@media (min-width: 769px) {
+    .menu-toggle, .mobile-auth {
+        display: none;
+    }
+
+    .main-nav {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        box-shadow: none;
+        align-items: center;
+    }
+
+    .menu-links {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .dropdown-header {
+        border-bottom: none;
+        padding: 0 15px;
+    }
+
+    .auth-links {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .auth-links a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1100px;
+    }
+
+    /* დესკტოპზე ქვემენიუ hover-ზე */
+    .has-dropdown:hover .submenu {
+        display: block;
+        position: absolute;
+        top: 40px;
+        background: white;
+        border: 1px solid #eee;
+        padding: 10px;
+    }
+}
